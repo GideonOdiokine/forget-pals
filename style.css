@@ -1,0 +1,85 @@
+:root{
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+img{
+    width: 40px;
+    margin-top: 40px;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.form-text{
+  padding: 1rem 0;
+  font-size: 2rem;
+  width: 65%;
+  margin: 0 auto;
+  color: #333;
+  opacity: 0.7;
+}
+.form-body img{
+    width: 120px;
+}
+input{
+    display: block;
+    margin: 8px auto;
+}
+input[type="email"]{
+    width: 50%;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    outline: none;
+    border: 0.7px solid #000000;
+    margin: 0 auto;
+    height: 100%;
+}
+input[type="email"]:focus{
+    border: 2px solid #ccc;
+    transition: 4s border;
+}
+input[type="submit"]{
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(20, 55, 169);
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.8rem;
+    outline: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: rgb(45, 44, 126);
+    transition: 3s background;
+}
+.logo span img{
+    width: 20px;
+}
+@media(max-width:420px){
+    .form-text{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    input[type="email"]{
+        width: 80%;
+    }
+    input[type="submit"]{
+        width: 80%;
+    }
+}
